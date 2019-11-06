@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                .blue {
+                  color: blue;
+                }
+                .red{
+                color:red;
+                
+                }
+                </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+  $("#toggle").click(function(){
+    $("p").toggle();
+  });
+  $(".blue").click(function(){
+    $("p").removeClass("red");
+
+    $("p").addClass("blue");
+  });
+  $(".red").click(function(){
+    $("p").removeClass("blue");
+
+    $("p").addClass("red");
+
+  });
+  
+
+  
+});
+</script>
+</head>
+<body>
+
+<p>WEB CLASSES</p>
+<button  class="blue">blue</button>
+<button class="red">red</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</button>
+
+</body>
+</html>
